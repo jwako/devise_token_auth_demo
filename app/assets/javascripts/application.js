@@ -14,4 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
-//= require_tree .
+//= require angular
+//= require angular-cookie
+//= require ng-token-auth
+//= require angular_app
+//= require_directory ./controllers

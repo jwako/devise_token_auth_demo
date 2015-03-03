@@ -1,1 +1,44 @@
-<h3>Welcome</h3>
+<div class="row" ng-controller="AuthCtrl">
+
+  <div class="col-xs-4 col-xs-offset-2">
+  <form ng-submit="handleRegBtnClick()" role="form" ng-init="registrationForm = {}">
+    <h3 id="signUpTitle">Sign up</h3>
+
+    <div class="form-group">
+      <label>email</label>
+      <input type="email" name="email" ng-model="registrationForm.email" required="required" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+      <label>password</label>
+      <input type="password" name="password" ng-model="registrationForm.password" required="required" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+      <label>password confirmation</label>
+      <input type="password" name="password_confirmation" ng-model="registrationForm.password_confirmation" required="required" class="form-control"/>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-lg pull-right">Sign up</button>
+  </form>
+  </div>
+
+  <div class="col-xs-4">
+    <h3 id="signInTitle">Sign in</h3>
+
+    <form ng-submit="handleLoginBtnClick()" role="form" ng-init="loginForm = {}">
+      <div class="form-group">
+        <label>email</label>
+        <input type="email" name="email" ng-model="loginForm.email" required="required" class="form-control"/>
+      </div>
+
+      <div class="form-group">
+        <label>password</label>
+        <input type="password" name="password" ng-model="loginForm.password" required="required" class="form-control"/>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-lg pull-right">Sign in</button>
+    </form>
+  </div>
+
+</div>
