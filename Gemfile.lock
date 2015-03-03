@@ -198,8 +198,6 @@ GEM
     rails_12factor (0.0.3)
       rails_serve_static_assets
       rails_stdout_logging
-    rails_apps_pages (0.5.15)
-    rails_apps_testing (0.3.12)
     rails_layout (1.0.24)
     rails_serve_static_assets (0.0.4)
     rails_stdout_logging (0.0.3)
@@ -320,8 +318,6 @@ DEPENDENCIES
   quiet_assets
   rails (= 4.2.0)
   rails_12factor
-  rails_apps_pages
-  rails_apps_testing
   rails_layout
   rb-fchange
   rb-fsevent
