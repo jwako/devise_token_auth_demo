@@ -4,3 +4,4 @@
 asset 'angular'
 asset 'angular-cookie'
 asset 'ng-token-auth'
+asset 'angular-ui-router'

@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  root to: 'visitors#index'
+
+  root 'application#index'
+  get "*path.html" => "application#index", :layout => 0
+  get "*path" => "application#index"
+  # resource :home , controller: :home, only: :show
 
   devise_for :users
 

@@ -1,4 +1,4 @@
-angular.module('deviseTokenAuthApp').controller("AuthCtrl", ['$rootScope', '$scope', '$auth', ($rootScope, $scope, $auth) ->
+angular.module('deviseTokenAuthApp').controller("AuthCtrl", ['$rootScope', '$scope', '$auth', '$state', ($rootScope, $scope, $auth, $state) ->
 
   $scope.$on 'auth:registration-email-success', (ev, message) ->
     angular.element("#signUpTitle").after('<p class="alert alert-success">A confirmation mail was sent to ' + message.email + ' successfully</p>')
@@ -7,7 +7,7 @@ angular.module('deviseTokenAuthApp').controller("AuthCtrl", ['$rootScope', '$sco
     angular.element("#signUpTitle").after('<p class="alert alert-danger">' + reason.errors[0] + '</p>')
 
   $rootScope.$on 'auth:login-success', (ev, user) ->
-    alert('Welcome ', user.email)
+    console.log('Welcome ', user.email)
 
   $scope.handleRegBtnClick = () -> 
     $auth.submitRegistration($scope.registrationForm)
@@ -20,6 +20,6 @@ angular.module('deviseTokenAuthApp').controller("AuthCtrl", ['$rootScope', '$sco
   $scope.handleLoginBtnClick = () -> 
     $auth.submitLogin($scope.loginForm)
       .then (resp) ->
-        # TODO
+        $state.go 'home'
 
 ])

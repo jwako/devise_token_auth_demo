@@ -3,6 +3,7 @@
   "dependencies": {
     "angular": "latest",
     "angular-cookie": "latest",
-    "ng-token-auth": "latest"
+    "ng-token-auth": "latest",
+    "angular-ui-router": "latest"
   }
 }
