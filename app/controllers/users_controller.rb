@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-  before_action :authenticate_user!
+  # TODO: it gets undefined_method error!
+  # before_filter :authenticate_user!
 
   def index
     @users = User.all
