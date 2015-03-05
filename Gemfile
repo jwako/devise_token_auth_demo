@@ -9,8 +9,9 @@ gem 'jbuilder', '~> 2.0'
 
 gem 'bower-rails'
 gem 'devise_token_auth'
-gem 'omniauth-facebook'
 gem 'angular-rails-templates'
+gem 'grape'
+gem 'grape-jbuilder'
 
 group :development, :test do
   gem 'byebug'

@@ -13,6 +13,7 @@ angular.module('deviseTokenAuthApp').controller("AuthCtrl", ['$rootScope', '$sco
     $auth.submitRegistration($scope.registrationForm)
       .then (resp) ->
         $scope.registrationForm = {}
+        $state.go 'home'
       .catch (resp) ->
         $scope.registrationForm.password = ""
         $scope.registrationForm.password_confirmation = ""
