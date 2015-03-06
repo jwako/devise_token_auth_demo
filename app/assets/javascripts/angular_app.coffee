@@ -4,8 +4,8 @@ deviseTokenAuthApp = angular.module('deviseTokenAuthApp', [
   'templates'
   'ngResource'
 ])
-.config ($httpProvider) ->
-  $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content')
+# .config ($httpProvider) ->
+#   $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content')
 .config ($authProvider) ->
   $authProvider.configure
     apiUrl: '/api/v1'

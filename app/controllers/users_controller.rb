@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  # TODO: it gets undefined_method error!
-  # before_filter :authenticate_user!
+  # TODO: Completed 401 Unauthorized
+  before_filter :authenticate_api_user!
 
   def index
     @users = User.all

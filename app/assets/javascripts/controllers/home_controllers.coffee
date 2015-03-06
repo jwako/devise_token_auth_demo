@@ -1,4 +1,5 @@
 angular.module('deviseTokenAuthApp').controller("HomeCtrl", ['$scope', 'User', ($scope, User) ->
+
   @userService = new User(serverErrorHandler)
   @userService.all().$promise.then (result) ->
     $scope.users = result.users

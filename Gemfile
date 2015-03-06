@@ -8,10 +8,11 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 
 gem 'bower-rails'
-gem 'devise_token_auth'
+gem 'devise_token_auth' #, path: "/Users/jwako/Documents/progs/gems/devise_token_auth"
 gem 'angular-rails-templates'
 gem 'grape'
 gem 'grape-jbuilder'
+gem 'rack-cors', :require => 'rack/cors'
 
 group :development, :test do
   gem 'byebug'
