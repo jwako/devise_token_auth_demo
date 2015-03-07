@@ -1,7 +1,5 @@
 class Api::UsersController < ApplicationController
-  # TODO: Completed 401 Unauthorized
-  before_filter :authenticate_api_user!
-  # before_action :authenticate_user!
+  before_action :authenticate_api_user!
 
   def index
     @users = User.all
