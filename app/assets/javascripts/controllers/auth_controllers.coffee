@@ -1,4 +1,4 @@
-angular.module('deviseTokenAuthApp').controller("AuthCtrl", ['$rootScope', '$scope', '$auth', '$state', ($rootScope, $scope, $auth, $state) ->
+angular.module('deviseTokenAuthApp').controller("AuthCtrl", ['$rootScope', '$scope', '$auth', '$state', '$http', ($rootScope, $scope, $auth, $state, $http) ->
 
   $scope.$on 'auth:registration-email-success', (ev, message) ->
     angular.element("#signUpTitle").after('<p class="alert alert-success">A confirmation mail was sent to ' + message.email + ' successfully</p>')
@@ -22,5 +22,8 @@ angular.module('deviseTokenAuthApp').controller("AuthCtrl", ['$rootScope', '$sco
     $auth.submitLogin($scope.loginForm)
       .then (resp) ->
         $state.go 'home'
+
+  serverErrorHandler = ->
+    console.log("There was a server error.")
 
 ])
