@@ -43,7 +43,7 @@ module DeviseTokenAuthDemo
       env['api.tilt.root'] = Rails.root.join 'app', 'views', 'api', 'v1'
     end
 
-    config.middleware.use Rack::Cors do
+    config.middleware.insert_before 0, "Rack::Cors" do
       allow do
         origins '*'
         resource '*',
