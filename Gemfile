@@ -8,7 +8,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 
 gem 'bower-rails'
-gem 'devise_token_auth'
+gem 'devise_token_auth', '0.1.32.beta8'
 gem 'angular-rails-templates'
 gem 'grape'
 gem 'grape-jbuilder'

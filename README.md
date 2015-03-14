@@ -1,22 +1,25 @@
-Devise Token Auth Demo
+Rails(devise_token_auth) + AngularJS(ng-token-auth) Demo
 ================
 
-Ruby on Rails
--------------
-
-This application requires:
-
-- Ruby 2.1.1
-- Rails 4.2.0
+This is a rails application fully configured to work with the [devise_token_auth](https://github.com/lynndylanhurley/devise_token_auth) and [ng-token-auth](https://github.com/lynndylanhurley/ng-token-auth).
 
 Getting Started
 ---------------
 
+## Rails
+
 ```
 $bundle install
-$rake db:create
-$rake db:migrate
+$rake db:create db:migrate
 ```
+
+## AngularJS
+
+```
+$rake bower:install
+```
+
+## Start server
 
 ```
 $rails s
