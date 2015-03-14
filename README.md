@@ -24,3 +24,7 @@ $rake bower:install
 ```
 $rails s
 ```
+
+## Live Demo
+
+[Devise Token Auth Demo](https://rails-angular-auth-demo.herokuapp.com/)
